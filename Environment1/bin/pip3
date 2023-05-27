@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/manvendra07/Documents/JPMC Software Engg. Virtual Program/forage-jpmc-swe-task-1/Environment1/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
